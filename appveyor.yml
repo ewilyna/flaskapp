@@ -1,4 +1,3 @@
-image: Ubuntu
 build_script:
   - chmod +x ./flaskapps/st.sh
   - pip3 install flask
