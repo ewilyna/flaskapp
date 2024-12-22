@@ -5,10 +5,7 @@ build_script:
   - pip3 install gunicorn
   - cd flaskapps
   - ./st.sh
-  - ./ngrok http 5000 &
-install:
-  - wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-  - unzip -o ngrok-stable-linux-amd64.zip
+
 
 
 

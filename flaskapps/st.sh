@@ -1,46 +1,8 @@
-#!/bin/bash
-
-# Добавляем директорию с локальными пакетами в PATH
 export PATH=$HOME/.local/bin:$PATH
-
-# Запускаем Gunicorn
-gunicorn --bind 0.0.0.0:5000 wsgi:app &
-APP_PID=$!
+gunicorn --bind 127.0.0.1:5000 wsgi:app & APP_PID=$!
 sleep 5
-
-if ! ps -p $APP_PID > /dev/null; then
-  echo "Ошибка: Gunicorn не запустился."
-fi
-
-# Проверяем наличие ngrok и запускаем его
-if [ ! -f ./ngrok ]; then
-  echo "Ошибка: ngrok не найден."
-fi
-
-chmod +x ./ngrok
-./ngrok http 5000 &
-NGROK_PID=$!
-sleep 5
-
-if ! ps -p $NGROK_PID > /dev/null; then
-  echo "Ошибка: ngrok не запустился."
-fi
-
-# Получаем URL ngrok
-if ! command -v jq &> /dev/null; then
-  echo "Ошибка: jq не установлен."
-fi
-
-NGROK_URL=$(curl --silent http://127.0.0.1:4040/api/tunnels | jq -r '.tunnels[0].public_url')
-echo "Сайт доступен по адресу: $NGROK_URL"
-
-# Ожидаем завершения
-wait $APP_PID
-
-# Завершаем ngrok
-if ps -p $NGROK_PID > /dev/null; then
-  kill $NGROK_PID
-fi
-
-echo "Gunicorn и ngrok завершены."
+echo $APP_PID
+kill -TERM $APP_PID
+echo process gunicorns kills
+exit 0
 

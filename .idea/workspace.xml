@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ff0d950-3f42-495b-9755-569ac64c4648" name="Changes" comment="update yml">
-      <change beforePath="$PROJECT_DIR$/flaskapps/st.sh" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapps/st.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appveyor.yml" beforeDir="false" afterPath="$PROJECT_DIR$/appveyor.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <workItem from="1734859907398" duration="19000" />
       <workItem from="1734859955899" duration="72000" />
       <workItem from="1734860062141" duration="19000" />
-      <workItem from="1734860098857" duration="8103000" />
+      <workItem from="1734860098857" duration="8841000" />
     </task>
     <task id="LOCAL-00001" summary="add some_app.py">
       <created>1734860572036</created>
@@ -267,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1734869484103</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update yml">
+      <created>1734869640138</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1734869640138</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
