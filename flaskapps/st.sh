@@ -9,6 +9,7 @@ APP_PID=$!
 sleep 5
 
 if ! ps -p $APP_PID > /dev/null; then
+  echo "Ошибка: Gunicorn не запустился."
 fi
 
 # Проверяем наличие ngrok и запускаем его
