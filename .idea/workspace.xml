@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ff0d950-3f42-495b-9755-569ac64c4648" name="Changes" comment="create wsgi" />
+    <list default="true" id="5ff0d950-3f42-495b-9755-569ac64c4648" name="Changes" comment="update yml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapps/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapps/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/some_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapps/some_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/st.sh" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapps/st.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapps/wsgi.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +47,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\ewilin\Documents\GitHub\flaskapp\flaskapps\main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -61,7 +68,7 @@
       <workItem from="1734859907398" duration="19000" />
       <workItem from="1734859955899" duration="72000" />
       <workItem from="1734860062141" duration="19000" />
-      <workItem from="1734860098857" duration="1516000" />
+      <workItem from="1734860098857" duration="3114000" />
     </task>
     <task id="LOCAL-00001" summary="add some_app.py">
       <created>1734860572036</created>
@@ -98,7 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1734861564052</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create st.sh">
+      <created>1734861655153</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734861655153</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update yml">
+      <created>1734861695515</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734861695515</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +130,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -121,6 +154,8 @@
     <MESSAGE value="test 1" />
     <MESSAGE value="create .yml" />
     <MESSAGE value="create wsgi" />
-    <option name="LAST_COMMIT_MESSAGE" value="create wsgi" />
+    <MESSAGE value="create st.sh" />
+    <MESSAGE value="update yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update yml" />
   </component>
 </project>
