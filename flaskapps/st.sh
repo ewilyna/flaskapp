@@ -1,25 +1,50 @@
 #!/bin/bash
 
-# Запускаем Gunicorn для Flask-приложения
-gunicorn --bind 0.0.0.0:5000 wsgi:app &  # Поднятие приложения на порту 5000
-APP_PID=$!                               # Сохраняем PID приложения
+# Добавляем директорию с локальными пакетами в PATH
+export PATH=$HOME/.local/bin:$PATH
 
-# Даём приложению немного времени для запуска
+# Запускаем Gunicorn
+gunicorn --bind 0.0.0.0:5000 wsgi:app &
+APP_PID=$!
 sleep 5
 
-# Запускаем ngrok для проброса порта 5000
-./ngrok http 5000 > /dev/null &         # Запуск ngrok в фоне
+if ! ps -p $APP_PID > /dev/null; then
+  echo "Ошибка: Gunicorn не запустился."
+  exit 1
+fi
+
+# Проверяем наличие ngrok и запускаем его
+if [ ! -f ./ngrok ]; then
+  echo "Ошибка: ngrok не найден."
+  exit 1
+fi
+
+chmod +x ./ngrok
+./ngrok http 5000 &
 NGROK_PID=$!
-
-# Даём ngrok время для получения публичного URL
 sleep 5
 
-# Выводим публичный URL для доступа к приложению
-curl --silent http://127.0.0.1:4040/api/tunnels | jq -r '.tunnels[0].public_url'
+if ! ps -p $NGROK_PID > /dev/null; then
+  echo "Ошибка: ngrok не запустился."
+  exit 1
+fi
 
-# Ожидаем завершения работы (опционально)
+# Получаем URL ngrok
+if ! command -v jq &> /dev/null; then
+  echo "Ошибка: jq не установлен."
+  exit 1
+fi
+
+NGROK_URL=$(curl --silent http://127.0.0.1:4040/api/tunnels | jq -r '.tunnels[0].public_url')
+echo "Сайт доступен по адресу: $NGROK_URL"
+
+# Ожидаем завершения
 wait $APP_PID
 
-# Очищаем ресурсы
-kill -TERM $NGROK_PID
+# Завершаем ngrok
+if ps -p $NGROK_PID > /dev/null; then
+  kill $NGROK_PID
+fi
+
 echo "Gunicorn и ngrok завершены."
+
