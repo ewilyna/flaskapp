@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ff0d950-3f42-495b-9755-569ac64c4648" name="Changes" comment="" />
+    <list default="true" id="5ff0d950-3f42-495b-9755-569ac64c4648" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,8 +58,13 @@
       <option name="presentableId" value="Default" />
       <updated>1734859903192</updated>
       <workItem from="1734859907398" duration="19000" />
+      <workItem from="1734859955899" duration="72000" />
+      <workItem from="1734860062141" duration="19000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
