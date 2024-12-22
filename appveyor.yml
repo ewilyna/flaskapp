@@ -3,7 +3,7 @@ build_script:
   - chmod +x ./flaskapps/st.sh
   - pip3 install flask
   - pip3 install gunicorn
-  - cd flaskapp
+  - cd flaskapps
   - ./st.sh
 
 
