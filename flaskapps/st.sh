@@ -1,5 +1,5 @@
-gunicorn --bind 0.0.0.0:5000 wsgi:app &  # Поднятие приложения на порту 5000
-APP_PID=$!                               # Сохраняем PID приложения
+export PATH=$PATH:/home/appveyor/.local/bin
+gunicorn --bind 127.0.0.1:5000 wsgi:app & APP_PID=$!
 sleep 5
 echo $APP_PID
 kill -TERM $APP_PID
