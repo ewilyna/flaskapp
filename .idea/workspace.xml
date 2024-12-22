@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ff0d950-3f42-495b-9755-569ac64c4648" name="Changes" comment="update yml" />
+    <list default="true" id="5ff0d950-3f42-495b-9755-569ac64c4648" name="Changes" comment="update yml">
+      <change beforePath="$PROJECT_DIR$/flaskapps/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskapps/wsgi.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +68,7 @@
       <workItem from="1734859907398" duration="19000" />
       <workItem from="1734859955899" duration="72000" />
       <workItem from="1734860062141" duration="19000" />
-      <workItem from="1734860098857" duration="5915000" />
+      <workItem from="1734860098857" duration="6258000" />
     </task>
     <task id="LOCAL-00001" summary="add some_app.py">
       <created>1734860572036</created>
@@ -208,7 +210,21 @@
       <option name="project" value="LOCAL" />
       <updated>1734867226189</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="update yml">
+      <created>1734867446190</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1734867446190</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update yml">
+      <created>1734867664186</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1734867664186</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
